@@ -1,0 +1,6 @@
+Site          : http://edf-energy-demo.cloud.thingworx.com 
+Response Code : 302 
+Result        : This is ok and redirects 
+Site          : http://scirotec-twx-tst.cloud.thingworx.com 
+Response Code : 200 
+Result        : This responds to HTTP and is BAD!! 
