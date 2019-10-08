@@ -1,6 +1,21 @@
-Site          : http://edf-energy-demo.cloud.thingworx.com 
-Response Code : 302 
-Result        : This is ok and redirects 
-Site          : http://scirotec-twx-tst.cloud.thingworx.com 
-Response Code : 200 
-Result        : This responds to HTTP and is BAD!! 
+Site Name      : http://edf-energy-demo.cloud.thingworx.com 
+Site Address   : 52.19.138.67 
+Response Code  : 302 
+Result         : This is ok and redirects 
+
+Site Name      : http://scirotec-twx-tst.cloud.thingworx.com 
+Site Address   : 52.59.31.34 
+Response Code  : 200 
+Result         : This responds to HTTP and is BAD!! 
+
+Site Name      : http://www.35thomasfarmcir.com 
+Site Address   : 172.217.10.243 
+Response Code  : 302 
+Result         : This is ok and redirects 
+
+Site Name      : http://boats.35thomasfarmcir.com 
+Site Address   : 172.217.10.243 
+Response Code  : 301 
+Result         : This is ok and redirects 
+
+Report Complete 
