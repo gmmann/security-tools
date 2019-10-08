@@ -13,4 +13,6 @@ with open(ip_list_file, "r") as ip_list:
     ip_list_file_read = csv.reader(ip_list)
     ip_list.readline()
     for ip_row in ip_list_file_read:
-        print (ip_row[0])
+        # print (ip_row[0])
+        ip_address = ip_row[0]
+        print(ip_address)
