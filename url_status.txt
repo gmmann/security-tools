@@ -1,6 +1,6 @@
-Site Name      : http://aar-sandbox.axeda.com 
-Site Address   : 216.34.120.47 
-Response Code  : 302 
-Result         : This is ok and redirects 
-
+Site Name        : http://aar-sandbox.axeda.com 
+Site Address     : 216.34.120.47 
+Response Code    : 302 
+Result           : This is ok and redirects 
+Redirect URL is  : https://aar-sandbox.axeda.com/drm/
 Report Complete 
