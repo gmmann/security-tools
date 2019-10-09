@@ -14,11 +14,11 @@ def isOpen(ip,port):
    try:
         s.connect((ip, int(port)))
         s.shutdown(2)
-        http_open = 'True'
-        # print(http_open)
+        # http_open = 'True'
+        # # print(http_open)
         return True
    except:
-        http_open = 'False'
+        # http_open = 'False'
         return False
         # print(http_open)
 

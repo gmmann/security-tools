@@ -1,0 +1,5 @@
+Site Name      : http://scirotec-twx-tst.cloud.thingworx.com 
+Site Address   : 52.59.31.34 
+Response Code  : 200 
+Result         : This responds to HTTP and is BAD!! 
+
