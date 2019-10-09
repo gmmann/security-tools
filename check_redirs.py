@@ -3,11 +3,32 @@ import requests
 import csv
 import os
 import sys
-# import nmap 
+import nmap 
 import socket
 url_list_file = './urllist'
 output_file = './url_status.txt'
 output_file_bad = './url_responds_to_http.txt'
+port_test = '80'
+
+def isOpen(ip,port):
+   s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+   try:
+        s.connect((ip, int(port)))
+        s.shutdown(2)
+        http_open = 'True'
+        print(http_open)
+        return True
+   except:
+        http_open = 'False'
+        return False
+        print(http_open)
+
+# scan = nmap.port_scan()
+# scan.scan('192.168.69.9', '80')
+# print(scan.comm)
+
+# port_scan = scan.scan('192.168.69.9', '80')
+
 
 def cleanup_old_file():
     if os.path.exists(output_file):
@@ -45,7 +66,12 @@ with open(url_list_file, "r") as url_list:
         # url_ip = os.system("nslookup " + str(url_list_file_read))
         # print(url_row[0])
         url_ip = socket.gethostbyname(url_row[0])
-        # print (url_ip)
+        isOpen(url_ip, port_test)
+        print(url_ip)
+        print(port_test)
+        if http_open():
+            print (url_ip)
+            print('HEY')
         url = 'http://' + url_row[0]
         # print(url)
         r = requests.get(url, allow_redirects=False)
