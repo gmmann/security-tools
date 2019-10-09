@@ -100,4 +100,4 @@ with open(url_list_file, "r") as url_list:
                 write_output_file.writelines('Result         : This is likely ok and redirects probably \n' )
                 write_output_file.writelines('\n' )
         write_output_file.writelines('Report Complete \n')
-        write_output_file.close
+        write_output_file.close()
