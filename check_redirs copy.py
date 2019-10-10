@@ -78,6 +78,7 @@ with open(url_list_file, "r") as url_list:
             url = 'http://' + url_row[0]
             # print(url)
             r = requests.get(url, allow_redirects=False)
+            response_with_redirs = requests.get(url, allow_redirects=False)
             # print(r.url)
             # print(r.history)
             # print(r.status_code)
@@ -102,12 +103,15 @@ with open(url_list_file, "r") as url_list:
                 write_output_file.writelines('Result           : This is ok and redirects \n' )
                 # write_output_file.writelines('\n' )
                 # print('This is ok and redirects')
-                response_with_redirs = requests.get(url, allow_redirects=True)
-                response_with_redirs.history
+                # response_with_redirs = requests.get(url)
                 # print(response_with_redirs.history)
-                for resp_redir in response_with_redirs.history:
-                    redir_url = response_with_redirs.url
-                write_output_file.writelines('Redirect URL is  : ' + redir_url +  '\n' )
+                # response_with_redirs.__getattribute__.
+                # # print(response_with_redirs.history)
+                # for resp_redir in response_with_redirs.history:
+                redir_url = r.history
+                print(redir_url)
+                    # print(redir_url + 'Hi')
+                # write_output_file.writelines('Redirect URL is  : ' + redir_url +  '\n' )
             else:
                 response_code_output()
                 # write_output_file.writelines('Site          : ' + url + ' \n' )
